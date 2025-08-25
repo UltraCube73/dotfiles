@@ -54,9 +54,12 @@ button:hover {
     background-color: transparent;
 }
 
-#window,
 #workspaces {
     margin: 0px;
+}
+
+#window {
+    margin: 0 0 0 10px;
 }
 
 #battery.charging, #battery.plugged {
@@ -65,14 +68,12 @@ button:hover {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        color: #ff0000;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    color: #ff0000;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -82,6 +83,10 @@ button:hover {
 
 label:focus {
     background-color: #000000;
+}
+
+#clock {
+    margin: 0 5px 0 0;
 }
 
 #network.disconnected {

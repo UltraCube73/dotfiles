@@ -10,11 +10,9 @@
       "format": " {}%",
       "interval": 2
     },
-    "modules-center": [
-      "sway/window"
-    ],
     "modules-left": [
-      "sway/workspaces"
+      "sway/workspaces",
+      "sway/window"
     ],
     "modules-right": [
       "mpris",
@@ -56,6 +54,9 @@
     },
     "tray": {
       "spacing": 5
+    },
+    "clock": {
+      "format": "| {:%H:%M}"
     },
     "margin-top": 5,
     "margin-left": 5,
