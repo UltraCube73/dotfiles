@@ -98,11 +98,10 @@ mode "resize" {
 gaps inner 5
 gaps outer 5
 for_window [class="Wine"] floating enable
+
 exec waybar
 
 exec wl-paste -t text --watch clipman store --no-persist
-
-exec sleep 5; openrgb --startminimized
 
 workspace "1" output "DP-1"
 workspace "2" output "DP-1"

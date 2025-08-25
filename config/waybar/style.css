@@ -1,16 +1,15 @@
 * {
-    font-family: "DepartureMono Nerd Font";
+    font-family: "CommitMono Nerd Font";
     font-size: 13px;
-    color: #000000;
+    color: #ffffff;
 }
 
 window#waybar {
-    background-color: #ffffff;
-    border-bottom: 3px solid #000000;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 15px;
 }
 
 button {
-    box-shadow: inset 0 -3px transparent;
     border: none;
     border-radius: 0;
 }
@@ -21,13 +20,16 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 3px;
+    padding: 0px;
+    min-height: 25px;
+    min-width: 25px;
     background-color: transparent;
     color: #ffffff;
 }
 
 #workspaces button.visible {
-    box-shadow: inset 0px 0px 0px 3px #000000;
+    border-radius: 15px;
+    background-color: #4b3fff;
 }
 
 #workspaces button.urgent {
@@ -47,39 +49,18 @@ button:hover {
 #tray,
 #mpris,
 #language {
-    padding: 0 7px 0 10px;
-    color: #000000;
-    box-shadow: inset 0 3px 0 #000000, inset 3px 0 0 #000000, inset 0 -3px 0 #000000;
+    padding: 0 5px 0 5px;
+    color: #ffffff;
+    background-color: transparent;
 }
 
 #window,
 #workspaces {
-    margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-#clock {
-    background-color: #000000;
-    color: #ffffff
-}
-
-#battery {
-    background-color: #ffffff;
-    color: #000000;
+    margin: 0px;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #00ff00;
 }
 
 @keyframes blink {
@@ -91,8 +72,7 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    color: #ff0000;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -104,28 +84,13 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #2ecc71;
-}
-
-#memory {
-    background-color: #9b59b6;
-}
-
-#backlight {
-    background-color: #90b1b1;
-}
-
-#network {
-    background-color: #2980b9;
-}
-
 #network.disconnected {
-    background-color: #f53c3c;
+    color: #ff0000;
 }
 
 #tray {
-    background-color: #2980b9;
+    margin: 0 2px;
+    background-color: rgba(81, 150, 255, 1);
 }
 
 #tray > .passive {
@@ -138,7 +103,5 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
-    margin: 0px;
     min-width: 17px;
 }
