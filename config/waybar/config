@@ -1,0 +1,71 @@
+[
+  {
+    "cpu": {
+      "format": " {usage}%",
+      "interval": 2
+    },
+    "height": 25,
+    "layer": "top",
+    "memory": {
+      "format": " {}%",
+      "interval": 2
+    },
+    "modules-center": [
+      "sway/window"
+    ],
+    "modules-left": [
+      "sway/workspaces"
+    ],
+    "modules-right": [
+      "mpris",
+      "tray",
+      "sway/language",
+      "cpu",
+      "memory",
+      "network",
+      "battery",
+      "clock"
+    ],
+    "mpris": {
+      "format": "{status_icon} {artist} - {title}",
+      "status-icons": {
+        "paused": "⏸",
+        "playing": "▶",
+        "stopped": "⏹"
+      }
+    },
+    "network": {
+      "format-disconnected": "no link",
+      "format-ethernet": "󰈀 {ipaddr}",
+      "format-wifi": " {essid} {signalStrength}% {ipaddr}",
+      "interval": 2
+    },
+    "position": "top",
+    "sway/workspaces": {
+      "disable-click": true,
+      "disable-scroll": true
+    },
+    "tray": {
+      "spacing": 5
+    }
+  },
+  {
+    "height": 25,
+    "layer": "top",
+    "modules-center": [
+      "sway/window"
+    ],
+    "modules-left": [
+      "sway/workspaces",
+      "sway/mode"
+    ],
+    "output": [
+      "DP-1"
+    ],
+    "position": "top",
+    "sway/workspaces": {
+      "disable-click": true,
+      "disable-scroll": true
+    }
+  }
+]
