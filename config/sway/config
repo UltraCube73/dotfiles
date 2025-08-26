@@ -8,7 +8,7 @@ focus_on_window_activation smart
 mouse_warping output
 workspace_layout default
 workspace_auto_back_and_forth no
-client.focused #0000ff #ffffff #000000 #0000ff #0000ff
+client.focused #4b3fff #ffffff #000000 #0000ff #4b3fff
 client.focused_inactive #000000 #cccccc #ffffff #000000 #000000
 client.unfocused #000000 #cccccc #ffffff #000000 #000000
 client.urgent #2f343a #900000 #ffffff #900000 #900000

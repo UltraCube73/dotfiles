@@ -98,6 +98,16 @@ label:focus {
     background-color: rgba(81, 150, 255, 1);
 }
 
+#tray menu {
+    background-color: rgba(20, 20, 20, 0.8);
+    color: #ffffff;
+}
+
+#tray menu menuitem:hover {
+    background-color: #4b3fff;
+    color: #ffffff;
+}
+
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
