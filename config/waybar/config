@@ -20,6 +20,7 @@
       "sway/language",
       "cpu",
       "memory",
+      "wireplumber",
       "network",
       "battery",
       "clock"
@@ -54,6 +55,12 @@
     },
     "tray": {
       "spacing": 5
+    },
+    "wireplumber": {
+      "format": "{icon} {volume}%",
+      "format-muted": " {volume}%",
+      "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+      "format-icons": ["", "", ""]
     },
     "clock": {
       "format": "| {:%H:%M}"
